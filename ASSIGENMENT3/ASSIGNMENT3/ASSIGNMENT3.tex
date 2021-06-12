@@ -169,13 +169,16 @@ Radius & $r$=3  \\
 \begin{align}
  \therefore \vec{P} = \myvec{-7\\0},\vec{Q} = \myvec{7\\0}
 \end{align}
-\begin{itemize}
- \item Let $PA$ and $PB$  be tangents from point P with the distance of 7cm. to the points A and B on circle with radius 3 .
-\end{itemize}
-  We know a tangent is always perpendicular to the radius .
+\begin{lemma}
+\label{lemma}
+ Let $PA$, $PB$, $QC$ and $QD$  are the tangents from points P and Q with the distance of 7cm. to the points A, B, C and D on circle with radius 3.
+ We know a tangent is always perpendicular to the radius .
 \begin{align}
 \therefore OA \perp AP
+\\
+\therefore OC \perp CQ
 \end{align}
+\end{lemma}
 Now,
 \begin{align}
 (\vec{O}-\vec{A})^T (\vec{A}-\vec{P}) &= 0 \quad \brak{\because OA \perp AP }
@@ -194,7 +197,7 @@ Now,
 \\
 \myvec{1&0} \vec{A} &= \frac{-9}{7}
 \\
-\vec{A} &= \myvec{\frac{-9}{7}\\0} + \lambda \myvec{0\\1} \label{2.0.11} 
+\vec{A} &= \myvec{\frac{-9}{7}\\0} + \lambda \myvec{0\\1} \label{2.0.12} 
 \\
 \vec{A}&=\vec{a}+\lambda\vec{m} 
 \\
@@ -210,19 +213,12 @@ Now,
 \\
 \lambda &= \pm2.71
 \end{align}
-Substitute $\lambda$  value in \eqref{2.0.11} we get,
+Substitute $\lambda$  value in \eqref{2.0.12} we get,
 \begin{align}
 \vec{A}=\myvec{\frac{-9}{7}\\2.71},
 \vec{B}=\myvec{\frac{-9}{7}\\-2.71}
 \end{align}
-\begin{itemize}
-\item Similarly, Let $QC$ and $QD$  be tangents from point Q with the distance of 7cm. to the points C and D on circle with radius 3.
-\end{itemize}
- We know a tangent is always perpendicular to the radius .
-\begin{align}
-\therefore OC \perp CQ
-\end{align}
-Now,
+Similarly,
 \begin{align}
 (\vec{O}-\vec{C})^T (\vec{C}-\vec{Q}) &= 0 \quad \brak{\because OC \perp CQ }
 \\
@@ -240,7 +236,7 @@ Now,
 \\
 \myvec{1&0} \vec{C} &= \frac{9}{7}
 \\
-\vec{C} &= \myvec{\frac{9}{7}\\0} + \mu \myvec{0\\1} \label{2.0.11} 
+\vec{C} &= \myvec{\frac{9}{7}\\0} + \mu \myvec{0\\1} \label{2.0.28} 
 \\
 \vec{C}&=\vec{c}+\mu\vec{m} 
 \\
@@ -256,14 +252,14 @@ We know,
 \\
 \mu &= \pm2.71
 \end{align}
-Substitute $\mu$  value in \eqref{2.0.11} we get
+Substitute $\mu$  value in \eqref{2.0.28} we get
 \begin{align}
 \vec{Q}=\myvec{\frac{9}{7}\\2.71},
 \vec{R}=\myvec{\frac{9}{7}\\-2.71}
 \end{align}
 
 \begin{itemize}
-\item Plot of Tangents PA,PB,QC and QD :
+\item Plot of Tangents PA, PB, QC and QD :
 \end{itemize}
 \numberwithin{figure}{section}
 \begin{figure}[ht]
