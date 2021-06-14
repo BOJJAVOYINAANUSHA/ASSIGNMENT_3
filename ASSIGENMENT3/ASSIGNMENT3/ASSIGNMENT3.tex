@@ -169,104 +169,143 @@ Radius & $r$=3  \\
 \begin{align}
  \therefore \vec{P} = \myvec{-7\\0},\vec{Q} = \myvec{7\\0}
 \end{align}
+\begin{enumerate}
+    \item To find coordinates of points where tangent touches the circle.
+\begin{itemize}
+    \item Let $\vec{M}$ be any point on x-axis whose coordinates are:
+    \begin{align}
+    \vec{M} =\myvec{M\textsubscript{1} \\0} \label{eq1}
+    \end{align}
+    \item Tangents are drawn from $\vec{M}$ to any circle with centre $\vec{O}$ at origin and radius \textbf{r}.
+\end{itemize}
 \begin{lemma}
 \label{lemma}
- Let $PA$, $PB$, $QC$ and $QD$  are the tangents from points P and Q with the distance of 7cm. to the points A, B, C and D on circle with radius 3.
- We know a tangent is always perpendicular to the radius .
+The coordinates of points $\vec{N\textsubscript{1}}$ and $\vec{N\textsubscript{2}}$ where tangent touches the circle are given by:
 \begin{align}
-\therefore OA \perp AP
+\vec{N}=\vec{n}+\lambda \vec{m} \label{eq2}
 \\
-\therefore OC \perp CQ
+\text{where, }\vec{m}=\myvec{0\\1} 
+\\
+\vec{n}=\myvec{\frac{r^2}{M\textsubscript{1}}\\0}
+\\
+\lambda = \pm\sqrt{\frac{r^2-\norm{\vec{n}}^2}{\norm{\vec{m}}^2}}
 \end{align}
 \end{lemma}
-Now,
+\begin{proof}
+We know a tangent is always perpendicular to the radius .
 \begin{align}
-(\vec{O}-\vec{A})^T (\vec{A}-\vec{P}) &= 0 \quad \brak{\because OA \perp AP }
+\therefore N\textsubscript{1}O \perp N\textsubscript{1}M, 
 \\
-\vec{A}^T(\vec{A}-\vec{P}) &= 0 \quad \brak{\because \vec{O}=\myvec{0\\0}}
-\\
-\vec{A}^T \vec{A} - \vec{A}^T \vec{P} &= 0  
-\\
-\norm{\vec{A}}^2 &= \vec{A}^T \vec{P}
-\\
-\norm{\vec{A}}^2 &= \vec{P}^T \vec{A}  \quad \brak{\because \vec{A}^T \vec{P} = \vec{P}^T \vec{A}}
-\\
-\vec{P}^T \vec{A} &= 9 \quad \brak{\because \norm{\vec{A}}^2 = 9}
-\\
-\myvec{-7&0} \vec{A} &= 9 \quad \brak{\because \vec{P} = \myvec{-7\\0} }
-\\
-\myvec{1&0} \vec{A} &= \frac{-9}{7}
-\\
-\vec{A} &= \myvec{\frac{-9}{7}\\0} + \lambda \myvec{0\\1} \label{2.0.12} 
-\\
-\vec{A}&=\vec{a}+\lambda\vec{m} 
-\\
-\vec{a}&=\myvec{\frac{-9}{7}\\ 0},\vec{m}=\myvec{0\\1}
+N\textsubscript{2}O \perp N\textsubscript{2}M
 \end{align}
- We know,
-\begin{align}
-\norm{\vec{a}+\lambda\vec{m}}^2&=9
-\\
-(\vec{a}+\lambda \vec{m})^T(\vec{a}+\lambda \vec{m})&=r^2
-\\
-\lambda^2&=\frac{r^2-\norm{\vec{a}}^2}{\norm{\vec{m}}^2}
-\\
-\lambda &= \pm2.71
-\end{align}
-Substitute $\lambda$  value in \eqref{2.0.12} we get,
-\begin{align}
-\vec{A}=\myvec{\frac{-9}{7}\\2.71},
-\vec{B}=\myvec{\frac{-9}{7}\\-2.71}
-\end{align}
-Similarly,
-\begin{align}
-(\vec{O}-\vec{C})^T (\vec{C}-\vec{Q}) &= 0 \quad \brak{\because OC \perp CQ }
-\\
-\vec{C}^T(\vec{C}-\vec{Q}) &= 0 \quad \brak{\because \vec{O}=\myvec{0\\0}}
-\\
-\vec{C}^T \vec{C} - \vec{C}^T \vec{Q} &= 0  
-\\
-\norm{\vec{C}}^2 &= \vec{C}^T \vec{Q}
-\\
-\norm{\vec{C}}^2 &= \vec{Q}^T \vec{C}  \quad \brak{\because \vec{C}^T \vec{Q} = \vec{Q}^T \vec{C}}
-\\
-\vec{Q}^T \vec{C} &= 9 \quad \brak{\because \norm{\vec{C}}^2 = 9}
-\\
-\myvec{7&0} \vec{C} &= 9 \quad \brak{\because \vec{Q} = \myvec{7\\0} }
-\\
-\myvec{1&0} \vec{C} &= \frac{9}{7}
-\\
-\vec{C} &= \myvec{\frac{9}{7}\\0} + \mu \myvec{0\\1} \label{2.0.28} 
-\\
-\vec{C}&=\vec{c}+\mu\vec{m} 
-\\
-\vec{c}&=\myvec{\frac{9}{7}\\ 0},\vec{m}=\myvec{0\\1}
-\end{align}
-We know,
-\begin{align}
-\norm{\vec{c}+\mu\vec{m}}^2&=9
-\\
-(\vec{c}+\mu \vec{m})^T(\vec{c}+\mu \vec{m})&=r^2
-\\
-\mu^2&=\frac{r^2-\norm{\vec{c}}^2}{\norm{\vec{m}}^2}
-\\
-\mu &= \pm2.71
-\end{align}
-Substitute $\mu$  value in \eqref{2.0.28} we get
-\begin{align}
-\vec{Q}=\myvec{\frac{9}{7}\\2.71},
-\vec{R}=\myvec{\frac{9}{7}\\-2.71}
-\end{align}
-
 \begin{itemize}
-\item Plot of Tangents PA, PB, QC and QD :
+\item Now,
+\begin{align}
+ \implies (\vec{O}-\vec{N})^T (\vec{N}-\vec{M}) &= 0
+ \\
+ \vec{N}^T(\vec{N}-\vec{M})&= 0 \quad \brak{\because \vec{O}=0}
+ \\
+  \vec{N}^T \vec{N} - \vec{N}^T \vec{M} &= 0  
+  \\
+   \vec{N}^T \vec{M} &=\norm{\vec{N}}^2
+  \end{align}
+ \begin{align}
+  \implies\vec{M}^T \vec{N} =\norm{\vec{N}}^2 (\because \vec{N}^T \vec{M}=\vec{M}^T \vec{N}) 
+ \end{align}
+\item Now,using \eqref{eq1} in above equation we get:
+\begin{align}
+    \implies  \myvec{M\textsubscript{1}&0}\vec{N} &=r^2 
+    \\
+    \implies   \myvec{1&0}\vec{N} &=\myvec{\frac{r^2}{M\textsubscript{1}}\\0} 
+    \\
+    \implies \vec{N}&=\myvec{\frac{r^2}{M\textsubscript{1}}\\0} +\lambda\myvec{0\\1}
+  \\
+    \implies \vec{N}&=\vec{n}+\lambda\vec{m} 
+   \end{align}
+    \begin{align}
+   \text{where, }\vec{n}&=\myvec{\frac{r^2}{M\textsubscript{1}}\\0} \text{and }\vec{m}=\myvec{0\\1}
+   \end{align}
+\item Also we know,
+\begin{align}
+\norm{\vec{n}+\lambda\vec{m}}^2&=r^2
+\\
+(\vec{n}+\lambda \vec{m})^T(\vec{n}+\lambda \vec{m})&=r^2
+\end{align}
+\begin{align}
+\lambda^2&=\frac{r^2-\norm{\vec{n}}^2}{\norm{\vec{m}}^2}
+\\
+\lambda &= \pm \sqrt{\frac{r^2-\norm{\vec{n}}^2}{\norm{\vec{m}}^2}} 
+\end{align}
 \end{itemize}
+\end{proof}
+\item For tangents to the \textbf{Circle} from a point $\vec{P}$:-
+\begin{itemize}
+\item Here, we have r=3
+\item Now,referencing \eqref{eq2},we have
+\begin{align}
+ \vec{A}=\vec{a}+\lambda\textsubscript{1}\vec{m}   \label{eqa}
+\end{align}
+where,
+\begin{align}
+ \vec{m}=\myvec{0\\1},\vec{a}=\myvec{\frac{r}{M\textsubscript{1}}\\0}
+ \end{align}
+ \item Using $\vec{P}=\myvec{M\textsubscript{1}\\0}=\myvec{-7\\0}$, we get: 
+ \begin{align}
+ \vec{a}=\myvec{\frac{-9}{7}\\0} =\myvec{-1.285\\0}
+\end{align}
+And
+\begin{align}
+\lambda\textsubscript{1} &= \pm\sqrt{\frac{r^2-\norm{\vec{a}}^2}{\norm{\vec{m}}^2}}
+\\
+\lambda\textsubscript{1} &= \pm 2.71
+\end{align}
+\end{itemize}
+\item Substituting $\lambda\textsubscript{1}$, $\vec{a}$ and $\vec{m}$ in \eqref{eqa} we get the coordinates of $\vec{A}$ and  $\vec{B}$ as :
+\begin{align}
+\vec{A}&=\myvec{-1.285\\0}+ 2.71\myvec{0\\1}=\myvec{-1.285\\2.71}
+\\
+\vec{B}&=\myvec{-1.285\\0}- 2.71\myvec{0\\1}=\myvec{-1.285\\-2.71}
+\end{align}
+\item For tangents to the \textbf{Circle} from a point $\vec{Q}$:-
+\begin{itemize}
+\item Here, we have r=3
+\item Referencing \eqref{eq2},we have
+\begin{align}
+ \vec{C}=\vec{c}+\lambda\textsubscript{2} \vec{m}   \label{eqb}
+\end{align}
+where,
+\begin{align}
+ \vec{m}=\myvec{0\\1},\vec{c}=\myvec{\frac{r}{M\textsubscript{1}}\\0}
+ \end{align}
+ \item Using $\vec{Q}=\myvec{M\textsubscript{1}\\0}=\myvec{7\\0}$ we get :
+ \begin{align}
+ \vec{c}=\myvec{\frac{9}{7}\\0}=\myvec{1.285\\0}
+\end{align}
+And
+\begin{align}
+\lambda\textsubscript{2} &= \pm\sqrt{\frac {r^2-\norm{\vec{c}}^2}{\norm{\vec{m}}^2}}
+\\
+\lambda\textsubscript{2} &=\pm 2.71
+\end{align}
+\end{itemize}
+\item Substituting $\lambda\textsubscript{2}$, $\vec{c}$ and $\vec{m}$ in \eqref{eqb} we get the coordinates of $\vec{C}$ and  $\vec{D}$ as :
+\begin{align}
+\vec{C}&=\myvec{1.285\\0}+ 2.71\myvec{0\\1}&=\myvec{1.285\\2.71}
+\\
+\vec{D}&=\myvec{1.285\\0}- 2.71\myvec{0\\1}&=\myvec{1.285\\-2.71}
+\end{align}
+\item Now, the coordinates of  A, B, C, D are,
+\begin{align}
+ \vec{A}=\myvec{-1.285\\2.71},\vec{B} =\myvec{-1.285\\-2.71}, \vec{C}=\myvec{1.285\\2.71},\vec{D}=\myvec{1.285\\-2.71}
+\end{align}
+\item Plot of Tangents PA, PB, QC and QD :
 \numberwithin{figure}{section}
 \begin{figure}[ht]
     \centering
     \includegraphics[width=\columnwidth]{FIGURE3.png}
     \caption{Tangent lines to circle of radius 3 units.}
     \label{fig:Tangent lines to circle of radius 3 units.}
-\end{figure}    
+\end{figure}
+\end{enumerate}    
 \end{document}
 
